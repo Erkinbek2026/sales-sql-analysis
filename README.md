@@ -192,3 +192,13 @@ SELECT
 FROM train
 GROUP BY year
 ORDER BY year;
+
+sales-sql-analysis/
+│
+├── README.md
+├── queries.sql
+├── advanced_queries.sql
+
+
+
+
