@@ -70,3 +70,39 @@ LIMIT 3;
 - Топ клиент: Sean Miller  
 - Топ город: New York City  
 - Топ товар: Canon imageCLASS 2200 Advanced Copier  
+
+## 🛠️ Skills
+
+- SQL (SQLite)
+- Aggregations (SUM, AVG, COUNT)
+- GROUP BY, ORDER BY
+- Data filtering (WHERE)
+- Working with dates (substr, date)
+- Data analysis
+
+- ## 📌 Примеры задач
+
+- Определение общего количества заказов
+- Поиск максимальной продажи
+- Анализ продаж по годам
+- Определение лучшего года по продажам
+- Анализ продаж по месяцам
+- Фильтрация данных по дате
+
+- ## 📂 Структура проекта
+
+- `queries.sql` — базовые SQL-запросы
+- `advanced_queries.sql` — продвинутые запросы (даты, аналитика)
+
+- ## 🚀 Как использовать
+
+1. Загрузить dataset (Superstore) в SQLite
+2. Назвать таблицу `train`
+3. Запустить SQL-запросы из файлов:
+   - queries.sql
+   - advanced_queries.sql
+  
+   - ## 📈 Результаты
+
+- Лучший год по продажам: 2018
+- Общий объём продаж увеличивается с каждым годом
