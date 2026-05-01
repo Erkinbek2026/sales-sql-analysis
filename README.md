@@ -122,3 +122,73 @@ LIMIT 3;
 - Агрегации и группировки
 - Анализ временных данных
 - Поиск инсайтов
+
+# 📊 Анализ продаж (SQL)
+
+🔗 Репозиторий: https://github.com/Erkinbek2026/sales-sql-analysis
+
+---
+
+## 📌 Описание проекта
+
+В данном проекте выполнен анализ данных о продажах с использованием SQL.
+
+🎯 **Цель:**
+- Изучить ключевые бизнес-показатели
+- Найти инсайты в продажах
+- Практиковать SQL (агрегации, фильтрация, группировки)
+
+---
+
+## 📂 Данные
+
+- Источник: Superstore dataset
+- Количество строк: 9800
+- Таблица: `train`
+
+---
+
+## 🛠 Используемые инструменты
+
+- SQL (SQLite / SQLiteViz)
+- GitHub
+
+---
+
+## 📈 Что было сделано
+
+### 🔹 Базовый анализ
+
+- Общее количество записей
+- Максимальная продажа
+- Средний чек
+
+```sql
+SELECT COUNT(*) FROM train;
+
+SELECT MAX(Sales) FROM train;
+
+SELECT AVG(Sales) FROM train;
+
+SELECT 
+  City,
+  SUM(Sales) AS total_sales
+FROM train
+GROUP BY City
+ORDER BY total_sales DESC
+LIMIT 5;
+
+SELECT 
+  "Customer Name",
+  SUM(Sales) AS total_spent
+FROM train
+GROUP BY "Customer Name"
+ORDER BY total_spent DESC
+LIMIT 5;
+
+SELECT 
+  substr("Order Date", 7, 4) AS year,
+  SUM(Sales) AS total_sales
+FROM train
+GROUP BY year
+ORDER BY year;
