@@ -47,3 +47,23 @@ FROM train
 GROUP BY "Customer Name"
 ORDER BY total_spent DESC
 LIMIT 1;
+
+SELECT 
+  substr("Order Date", 7, 4) AS year,
+  SUM(Sales) AS total_sales
+FROM train
+GROUP BY year
+ORDER BY total_sales DESC
+LIMIT 1;
+
+SELECT 
+  substr("Order Date", 4, 2) AS month,
+  SUM(Sales) AS total_sales
+FROM train
+GROUP BY month
+ORDER BY total_sales DESC
+LIMIT 1;
+
+SELECT *
+FROM train
+WHERE substr("Order Date", 7, 4) = '2017';
