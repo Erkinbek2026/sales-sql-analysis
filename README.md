@@ -1,3 +1,5 @@
+📎 Репозиторий: https://github.com/Erkinbek2026/sales-sql-analysis
+
 # 📊 Анализ продаж (SQL)
 
 ## 📌 Описание проекта
