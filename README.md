@@ -62,3 +62,9 @@ GROUP BY "Customer Name"
 ORDER BY total_spent DESC
 LIMIT 3;
 ```
+## 📈 Результаты
+
+- Максимальная продажа: 22638.48  
+- Топ клиент: Sean Miller  
+- Топ город: New York City  
+- Топ товар: Canon imageCLASS 2200 Advanced Copier  
